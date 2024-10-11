@@ -1,0 +1,243 @@
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-image: url('1.jpg'); /* Background image */  
+    background-size: cover;  
+    background-attachment: fixed;  
+    color: #333;  
+}  
+
+header {  
+    background-color: rgba(52, 73, 94, 0.8); /* Semi-transparent header */  
+    color: white;  
+    padding: 10px 20px;  
+    position: fixed;  
+    top: 0;  
+    width: 100%;  
+    z-index: 1000;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);   
+} 
+          ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 58, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
+li {
+  list-style: none;
+}
+
+nav {  
+    display: flex; /* Flexbox for inline alignment */  
+    justify-content: center; /* Center nav items */  
+    align-items: center;  
+    list-style-type: none; /* Remove default list styles */  
+    padding: 0; /* Remove padding */  
+    margin: 0; /* Remove margin */  
+}  
+
+nav a {  
+    color: white;  
+    text-decoration: none;  
+    margin: 0 15px;  
+    font-weight: bold;  
+    transition: color 0.3s, transform 0.3s;  
+    position: right;  
+}  
+
+nav a:hover {  
+      color: #cda45e;
+    text-decoration: inline;
+    transform: scale(1.1);  
+}  
+          
+
+  
+  a:hover {
+    color: #d9ba85;
+    text-decoration: inline;
+  }
+
+nav a::after {  
+    content: '';  
+    display: none;  
+    height: 2px;  
+    width: 100%;  
+    background-color: #1abc9c; /* Decorative line color */  
+    transform: scaleX(0); /* Start hidden */  
+    transition: transform 0.3s;  
+    position: absolute;  
+    left: 0;  
+    bottom: -5px; /* Position below text */  
+}  
+
+
+/* Add padding-top to body or main content to prevent overlap with the fixed header */  
+main {  
+    padding-top: 70px; /* Adjust this value accordingly */  
+}  
+
+.social-icons {  
+    position: absolute;  
+    top: 10px;  
+    right: 20px;  
+}  
+.social-icons a {  
+    color: white;  
+    margin-left: 15px;  
+    text-decoration: none;  
+    font-size: 18px;  
+    transition: color 0.3s;  
+}  
+.social-icons a:hover {  
+    color: #1abc9c;  
+}  
+h1 {  
+    text-align: center;  
+    margin: 0;  
+}  
+
+
+section {  
+    margin: 20px;  
+}  
+.heading-section {  
+    margin-bottom: 40px;  
+    text-align: center;  
+}  
+.gallery-container {  
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+    gap: 20px;  
+}  
+.gallery-item {  
+    text-align: center;  
+    background-color: white;  
+    padding: 10px;  
+    border-radius: 10px;  
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  
+    transition: transform 0.3s;  
+}  
+.gallery-item:hover {  
+    transform: scale(1.05); /* Animation on hover */  
+}  
+.gallery-item img {  
+    width: 100%;  
+    height: auto;  
+    border-radius: 10px;  
+}  
+.gallery-item p {  
+    margin: 10px 0;  
+    font-weight: bold;  
+}  
+.gallery-item button {  
+    padding: 10px;  
+    background-color: #1abc9c;  
+    color: white;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+}  
+.gallery-item button:hover {  
+    background-color: #16a085;  
+}  
+.map-container {  
+    margin: 20px 0;  
+    padding: 20px;  
+    background-color: rgba(236, 240, 241, 0.8);  
+    border-radius: 10px;  
+    text-align: center;  
+}  
+iframe {  
+    width: 100%;  
+    height: 300px;  
+    border: none;  
+    border-radius: 10px;  
+}  
+/* Contact Form Decoration */  
+.container {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: flex-start;  
+    max-width: 800px;  
+    margin: auto;  
+}  
+
+.info-section, .contact-form {  
+    flex: 1;  
+    margin: 10px;  
+}  
+
+.contact-form {  
+    max-width: 400px;  
+}  
+
+form {  
+    display: flex;  
+    flex-direction: column;  
+}  
+
+label {  
+    margin: 5px 0;  
+}  
+
+input[type="text"], textarea {  
+    padding: 9px;  
+    margin-bottom: 10px;  
+    border: 1px solid red;  
+    border-radius: 6px;  
+}  
+
+button {  
+    padding: 10px;  
+    background-color: #4CAF50;  
+    color: white;  
+    border: none;  
+    border-radius: 4px;  
+    cursor: pointer;  
+}  
+
+button:hover {  
+    background-color: #45a049;  
+}
+          #newsletter {  
+    background-color: #f4f4f4;  
+    padding: 20px;  
+    text-align: center;  
+}  
+
+.container {  
+    max-width: 600px;  
+    margin: auto;  
+}  
+
+h1 {  
+    color:brown;  
+    font-family: 'Arial', sans-serif;  
+} 
+          h1 {  
+    color:red;  
+    font-family: 'Arial', sans-serif;  
+}
+
+input[type="email"] {  
+    padding: 10px;  
+    border: 1px solid #ccc;  
+    border-radius: 5px;  
+    width: 70%;  
+    margin-right: 10px;  
+}  
+
+.button_1 {  
+    padding: 10px 15px;  
+    border: none;  
+    border-radius: 5px;  
+    background-color: #28a745;  
+    color: white;  
+    cursor: pointer;  
+}  
+
+.button_1:hover {  
+    background-color: #218838; /* Darker shade on hover */  
+}
