@@ -202,6 +202,42 @@ button {
 button:hover {  
     background-color: #45a049;  
 }
+          #newsletter {  
+    background-color: #f4f4f4;  
+    padding: 20px;  
+    text-align: center;  
+}  
+
+.container {  
+    max-width: 600px;  
+    margin: auto;  
+}  
+
+h1 {  
+    color: #333;  
+    font-family: 'Arial', sans-serif;  
+}  
+
+input[type="email"] {  
+    padding: 10px;  
+    border: 1px solid #ccc;  
+    border-radius: 5px;  
+    width: 70%;  
+    margin-right: 10px;  
+}  
+
+.button_1 {  
+    padding: 10px 15px;  
+    border: none;  
+    border-radius: 5px;  
+    background-color: #28a745;  
+    color: white;  
+    cursor: pointer;  
+}  
+
+.button_1:hover {  
+    background-color: #218838; /* Darker shade on hover */  
+}
 </style>
 </head>
 <body>
@@ -239,15 +275,15 @@ button:hover {
     </section>-->
     
     
-       <section id="newsletter">
-      <div class="container">
-        <h1>Subscribe To Our Newsletter</h1>
-        <form>
-          <input type="email" placeholder="Enter Email..." required>
-          <button type="submit" class="button_1">Subscribe</button>
-        </form>
-      </div>
-    </section>
+<section id="newsletter" style="background-color: #f4f4f4; padding: 20px; text-align: center;">  
+    <div class="container" style="max-width: 600px; margin: auto;">  
+        <h1 style="color: #333; font-family: 'Arial', sans-serif;">Subscribe To Our Newsletter</h1>  
+        <form>  
+            <input type="email" placeholder="Enter Email..." required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; width: 70%; margin-right: 10px;">  
+            <button type="submit" class="button_1" style="padding: 10px 15px; border: none; border-radius: 5px; background-color: #28a745; color: white; cursor: pointer;">Subscribe</button>  
+        </form>  
+    </div>  
+</section>
 
     <!-- Gallery Section -->
     <section class="heading-section">
