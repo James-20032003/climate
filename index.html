@@ -157,70 +157,51 @@ iframe {
     border-radius: 10px;  
 }  
 /* Contact Form Decoration */  
-.contact-form {  
+.container {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: flex-start;  
+    max-width: 800px;  
+    margin: auto;  
+}  
+
+.info-section, .contact-form {  
     flex: 1;  
-    padding: 20px;  
-    background-color: #f4f4f4;  
-    border-right: 2px solid #ccc;  
+    margin: 10px;  
 }  
 
-.contact-form h2 {  
-    margin-top: 0;  
+.contact-form {  
+    max-width: 400px;  
 }  
 
-.contact-form label {  
-    display: block;  
-    margin: 10px 0 5px;  
+form {  
+    display: flex;  
+    flex-direction: column;  
 }  
 
-.contact-form input,   
-.contact-form textarea {  
-    width: 100%;  
-    padding: 10px;  
+label {  
+    margin: 5px 0;  
+}  
+
+input[type="text"], textarea {  
+    padding: 8px;  
     margin-bottom: 10px;  
     border: 1px solid #ccc;  
     border-radius: 4px;  
 }  
 
-.contact-form button {  
-    padding: 10px 15px;  
-    background-color: #5cb85c;  
+button {  
+    padding: 10px;  
+    background-color: #4CAF50;  
     color: white;  
     border: none;  
     border-radius: 4px;  
     cursor: pointer;  
 }  
 
-.contact-form button:hover {  
-    background-color: #4cae4c;  
-}  
-
-.info-section {  
-    flex: 1;  
-    padding: 20px;  
-    background-color: #ffffff;  
-}  
-
-.info-section h2 {  
-    margin-top: 0;  
-}  
-
-.info-section p {  
-    line-height: 1.6;  
-}  
-/*.contact-form::before {  
-    content: '';  
-    position: absolute;  
-    top: 0;  
-    left: -100%;  
-    width: 300%;  
-    height: 300%;  
-    background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(0,0,0,0));  
-    transform: rotate(45deg);  
-    animation: sweep 5s infinite;  
-    z-index: 1;  
-} */ 
-
+button:hover {  
+    background-color: #45a049;  
+}
 </style>
 </head>
 <body>
@@ -365,38 +346,29 @@ iframe {
     </section>
 
     <!-- Contact Form Section -->
-    <div class="container">  
-        <div class="contact-form">  
-            <h2>Contact Us</h2>  
-            <form>
-                 
-<form action="https://api.web3forms.com/submit" method="POST">
+ <div class="container">  
+    <div class="info-section">  
+        <h2>Information</h2>  
+        <p>We value your feedback and inquiries. Please fill out the contact form to reach us.</p>  
+        <p>Contact us for any issues related to our products.</p>  
+        <p>Our support team is available 24/7 to assist you.</p>  
+    </div>  
 
-    <input type="hidden" name="access_key" value="89c0d4a6-eddf-4f6f-a3f2-31e1cbf1b6f8">
+    <div class="contact-form">  
+        <h2>Contact Us</h2>  
+        <form action="https://api.web3forms.com/submit" method="POST">  
+            <input type="hidden" name="access_key" value="89c0d4a6-eddf-4f6f-a3f2-31e1cbf1b6f8">  
 
-                <label for="name">Name:</label>  
-                <input type="text" id="name" name="name" required>  
+            <label for="name">Name:</label>  
+            <input type="text" id="name" name="name" required>  
 
-                <label for="product">Product Name:</label>  
-                <input type="text" id="product" name="product" required>  
+            <label for="message">Message:</label>  
+            <textarea id="message" name="message" rows="4" required></textarea>  
 
-                <label for="address">Physical Address:</label>  
-                <input type="text" id="address" name="address" required>  
-
-                <label for="message">Message:</label>  
-                <textarea id="message" name="message" rows="4" required></textarea>  
-
-                <button type="submit">Submit</button>  
-            </form>  
-        </div>  
-        <div class="info-section">  
-            <h2>Information</h2>  
-            <p>We value your feedback and inquiries. Please fill out the contact form to reach us.</p>  
-            <p>Contact us for any issues related to our products.</p>  
-            <p>Our support team is available 24/7 to assist you.</p>  
-        </div>  
-    </div>
-
+            <button type="submit">Submit</button>  
+        </form>  
+    </div>  
+</div>
     <footer>
         <p>&copy; 2024 KERBS | The Best Place for Tech Products</p>
     </footer>
