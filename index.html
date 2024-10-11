@@ -33,14 +33,14 @@ nav {
     display: flex; /* Flexbox for inline alignment */  
     justify-content: center; /* Center nav items */  
     align-items: center;  
-    list-style-type: inline; /* Remove default list styles */  
+    list-style-type: none; /* Remove default list styles */  
     padding: 0; /* Remove padding */  
     margin: 0; /* Remove margin */  
 }  
 
 nav a {  
     color: white;  
-    text-decoration: inline;  
+    text-decoration: none;  
     margin: 0 15px;  
     font-weight: bold;  
     transition: color 0.3s, transform 0.3s;  
@@ -214,9 +214,13 @@ button:hover {
 }  
 
 h1 {  
+    color:brown;  
+    font-family: 'Arial', sans-serif;  
+} 
+          h1 {  
     color:red;  
     font-family: 'Arial', sans-serif;  
-}  
+}
 
 input[type="email"] {  
     padding: 10px;  
@@ -256,7 +260,7 @@ input[type="email"] {
           <ul>
             <li class="current"><a href="#index">Home</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            
           </ul>
         </nav>
       </div>
